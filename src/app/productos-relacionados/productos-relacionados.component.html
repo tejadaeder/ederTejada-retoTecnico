@@ -1,0 +1,16 @@
+<div >
+    <h4>Otros productos de la categoria: {{this.products[0].categoria}} </h4>
+</div>
+<div class="image-gallery">
+
+    <div class="image-container" *ngFor="let product of this.productos_relacionados_list">
+        <h2>{{ product.name }}</h2>
+        <h3>{{ product.categoria }}</h3>  
+        <img [src]="product.imagen" alt="{{ product.name }}" [routerLink]="['/product', product.id]">
+        <h4>Precio Final: S/. {{ product.price }}</h4>     
+
+  </div>
+</div>
+
+
+

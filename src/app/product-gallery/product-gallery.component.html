@@ -1,0 +1,23 @@
+<div class="product-message">
+  <h2>Estos productos pueden ser tuyos. </h2> 
+  <h5>No esperes más y aprovecha las promociones que tenemos para ti.</h5>
+  <div class="catalog-button">
+    <button class="button-catalogo" [routerLink]="['/verCatalogo']">Ver Catálogo Completo </button>
+  </div>
+</div>
+
+
+  
+<div class="product-grid">
+  <div class="product" *ngFor="let product of products" [routerLink]="['/product', product.id]">
+    <img [src]="product.imagen" alt="{{ product.name }}">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>    
+    <span class="price">S/. {{ product.price  }}</span>
+    <div class="buttons">
+      <button [routerLink]="['/product', product.id]" >Ver Producto</button>
+    </div>
+  </div>
+
+  </div>
+

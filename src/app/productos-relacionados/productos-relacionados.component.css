@@ -1,0 +1,29 @@
+.image-gallery {
+  display: flex;
+  overflow-x: auto;
+  max-width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-container {
+  flex: 0 0 calc(100% / 3); /* Ocupa el 33.33% del ancho disponible */
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: 60%;
+  width: 50%;
+  margin-bottom: 10px; /* Agrega espacio entre la imagen y el texto */
+}
+
+.image-description {
+  text-align: center; /* Centra el texto */
+  font-size: 14px; /* Tamaño de letra ajustable según sea necesario */
+  color: #333; /* Color de letra ajustable */
+}
+

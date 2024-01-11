@@ -1,0 +1,85 @@
+.categories {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .categories{
+    gap:5px;
+
+  }
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+ 
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;  
+  display: block;
+  width: 200px; /* Ajusta el valor según tus necesidades */
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.green-button {
+  background-color: #45a049;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+.green-button:hover {
+  background-color: #8bc78e;
+}
+
+.red-button {
+  background-color: #fa0505;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+.red-button:hover {
+  background-color: #e6936c;
+
+}
+
+
